@@ -1,0 +1,25 @@
+header,
+nav {
+  z-index: 100001;
+}
+
+/* Ensure the modal backdrop sits on top */
+.modal-open .navbar,
+.modal-open .footer {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition:
+    opacity 0.3s ease,
+    filter 0.3s ease;
+}
+
+/* Adding backdrop z-index to cover navbar/footer */
+.modal-open .modal-backdrop {
+  z-index: 100002 !important; /* Slightly higher than navbar/footer */
+}
+
+/* Optional: Adding blur effect to background (navbar/footer) when modal is open */
+.modal-open .navbar,
+.modal-open .footer {
+  filter: blur(4px);
+}

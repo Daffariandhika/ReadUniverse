@@ -1,0 +1,24 @@
+import { lazyWithDelay } from '../utils/LazyLoad';
+
+export const App = lazyWithDelay(() => import('../App'));
+export const Home = lazyWithDelay(() => import('../home/Home'));
+export const Shop = lazyWithDelay(() => import('../shop/Shop'));
+export const SingleBook = lazyWithDelay(() => import('../singlebook/SingleBook'));
+export const Layout = lazyWithDelay(() => import('../dashboard/Layout'));
+export const Dashboard = lazyWithDelay(() => import('../dashboard/Dashboard'));
+export const UploadBook = lazyWithDelay(() => import('../dashboard/UploadBook'));
+export const ManageBook = lazyWithDelay(() => import('../dashboard/ManageBook'));
+export const ManageUser = lazyWithDelay(() => import('../dashboard/ManageUser'));
+export const ManageOrder = lazyWithDelay(() => import('../dashboard/ManageOrder'));
+export const EditBook = lazyWithDelay(() => import('../dashboard/EditBook'));
+export const SignUp = lazyWithDelay(() => import('../page/SignUp'));
+export const ContactUs = lazyWithDelay(() => import('../page/Contact'));
+export const FeedbackForm = lazyWithDelay(() => import('../page/Feedback'));
+export const SignIn = lazyWithDelay(() => import('../page/SignIn'));
+export const Cart = lazyWithDelay(() => import('../page/Cart'));
+export const Notification = lazyWithDelay(() => import('../page/Notification'));
+export const Checkout = lazyWithDelay(() => import('../page/Checkout'));
+export const ForgotPassword = lazyWithDelay(() => import('../page/Reset'));
+export const NotFound = lazyWithDelay(() => import('../page/NotFound'));
+export const LikedBook = lazyWithDelay(() => import('../page/LikedBook'));
+export const Order = lazyWithDelay(() => import('../page/Order'));
