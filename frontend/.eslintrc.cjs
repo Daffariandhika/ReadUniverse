@@ -87,6 +87,7 @@ module.exports = {
     'prefer-const': 'warn',
     'jsx-a11y/anchor-is-valid': 'warn',
     'jsx-a11y/no-autofocus': 'warn',
+
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'import/no-named-as-default': 'off',
   },
